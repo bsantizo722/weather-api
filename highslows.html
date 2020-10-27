@@ -33,23 +33,28 @@
     </div>
   
     <header>
-      <input type="text" autocomplete="off"  class="search" placeholder="Search for your city..">
+      <input type="text" autocomplete="off"  class="search-box" placeholder="Search for your city..">
     </header>
     <!--I really commenting but this is our search bar and where the city
     and state will show-->
     <main>
-      <section class="location">
-        <div class="city d-flex justify-content-center"><h1></h1></div>
-      </section>
-      <div class="current">
-        <div class="temp d-flex justify-content-center"><h1></h1><span><h1></h1></span></div>
-      </div>
-    </main>
-    <style>
-    h1{font-size: 99px;}
-    </style>
-  
-    <script src="weatherapi.js"></script>
+        <!--there's alot goin on here, below-->
+        <section class="location">
+            <div class="city d-flex justify-content-center"><h1></h1></div>
+            <div class="date d-flex justify-content-center"><h1></h1></div>
+            </section>
+            <div class="current">
+                <div class="temp d-flex justify-content-center"><h1></h1><span><h1></h1></span></div>
+            <div class="weather d-flex justify-content-center"><h1></h1><span><h1></h1></span></div>
+            <div class="hi-low d-flex justify-content-center"><h1></h1><span><h1></h1></span></div>
+            </div>
+        </main>
+        <style>
+        .city, .date, .temp, .weather{font-size: 0px;}
+        .hi-low{font-size: 78px}
+        </style>
+        
+        <script src="weatherapi.js"></script>
     
 </body>
 </html>
