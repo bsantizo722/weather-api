@@ -23,6 +23,33 @@
                 </ul>
             </div>
             </nav>
+
+            <!--Simple introduction/welcoming to the site-->
+  <div class="jumbotron jumbotron-fluid bg-dark bg-info text-warning">
+        <div class="container text-sm-center">
+          <h1 class="display-4">Welcome!</h1>
+          <p class="lead">This is a simple weather site that gives you the daily weather.</p>
+        </div>
+    </div>
+  
+    <header>
+      <input type="text" autocomplete="off"  class="search" placeholder="Search for your city..">
+    </header>
+    <!--I really commenting but this is our search bar and where the city
+    and state will show-->
+    <main>
+      <section class="location">
+        <div class="city d-flex justify-content-center"><h1>Phoenix, Az</h1></div>
+      </section>
+      <div class="current">
+        <div class="temp d-flex justify-content-center"><h1>25</h1><span><h1>°c</h1></span></div>
+      </div>
+    </main>
+    <style>
+    h1{font-size: 99px;}
+    </style>
+  
+    <script src="weatherapi.js"></script>
     
 </body>
 </html>
